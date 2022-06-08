@@ -4627,6 +4627,8 @@ type PullRequestReviewPayload struct {
 		Type              string `json:"type"`
 		SiteAdmin         bool   `json:"site_admin"`
 	} `json:"sender"`
+	RequestedTeams []*Team `json:"requested_teams,omitempty"`
+
 	Installation struct {
 		ID int64 `json:"id"`
 	} `json:"installation"`
